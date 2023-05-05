@@ -1,1 +1,6 @@
 # Hook-for-Pre-Trained-Model
+A forward hook is a technique used in deep learning for extracting information from intermediate layers of a pre-trained neural network model during the forward pass. During the forward pass, the input flows through the layers of the model, and intermediate representations are computed at each layer. A forward hook is a function that is registered to run during the forward pass on a specific layer of the model. This function can access the intermediate representation computed at that layer and can perform any desired operation on it, such as logging, visualization, or further processing.
+
+Forward hooks are commonly used in transfer learning scenarios, where a pre-trained model is fine-tuned for a specific task. By extracting and analyzing the intermediate representations, researchers can gain insights into how the model is processing the input and identify which layers are most important for the task. This information can be used to guide the fine-tuning process, such as deciding which layers to freeze or which layers to apply additional regularization to. 
+
+Overall, forward hooks are a useful tool for understanding and optimizing pre-trained models, and are commonly used in research and practical applications of deep learning.
